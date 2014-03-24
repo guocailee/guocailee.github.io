@@ -1,0 +1,32 @@
+name: My Notes
+url: http://ogaclejapan.com
+baseurl: 
+timezone: Asia/Tokyo
+encoding: utf-8
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough", "tables", "fenced_code_blocks", "autolink"]
+
+pygments: true
+permalink: pretty
+paginate: 5
+
+owner : 
+  name : Masaki Ogata
+  nickname: ogaclejapan
+  github : ogaclejapan
+  twitter : ogaclejapan
+  googleplus : 115224314007024961072
+#  facebook : 
+
+# See http://schema.org/Article
+schema_article_type : Article
+
+google_analytics :
+  tracking_id : 'UA-37241684-1'
+
+addthis:
+  pub_id: 'ra-52b998c30d780542'
+
+exclude: ["README.md", "LICENSE", ".gitignore", "s3_website.yml", "images"]
