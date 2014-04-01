@@ -40,6 +40,14 @@ links:
 #    url: http://mademistakes.com
 #    external: true
 
+categories:
+ - java
+ - javascript
+ - linux
+ - html5
+ - git
+ - jekyll
+ - ruby on rails
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    China/Shanghai
 future:      true
