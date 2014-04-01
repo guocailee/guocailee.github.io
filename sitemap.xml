@@ -1,74 +1,21 @@
+---
+layout: nil
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc>{{ site.url }}</loc>
     </url>
     
-    
+    {% for page in site.pages %}
     <url>
-        <loc>http://localhost:4000/theme-setup/</loc>
+        <loc>{{ site.url }}{{ page.url }}</loc>
     </url>
-    
-    <url>
-        <loc>http://localhost:4000/about/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/posts/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/index.html</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/feed.xml</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/sitemap.xml</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/tags/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/404.html</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/page2/index.html</loc>
-    </url>
-    
+    {% endfor %}
 
-    
+    {% for post in site.posts %}
     <url>
-        <loc>http://localhost:4000/background-image/</loc>
+        <loc>{{ site.url }}{{ post.url }}</loc>
     </url>
-    
-    <url>
-        <loc>http://localhost:4000/code-highlighting-post/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/sample-link-post/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/video-post/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/readability-feature-post/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/sample-post-images/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/readability-post/</loc>
-    </url>
-    
+    {% endfor %}
 </urlset>
