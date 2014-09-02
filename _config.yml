@@ -2,7 +2,7 @@ title:            阿宅的思想
 description:      编程＃闲语碎语
 disqus_shortname: 
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://www.rosiex.com
+url:              http://juyod.github.io/
 # Owner/author information
 owner:
   name:           阿宅
@@ -12,7 +12,7 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        guocailee
   facebook:       
-  github:         deisvn
+  github:         juyod
   stackexchange:  
   linkedin:       
   instagram:      
