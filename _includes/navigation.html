@@ -1,55 +1,123 @@
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-	<button class="dl-trigger">Open Menu</button>
-	<ul class="dl-menu">
-		<li><a href="{{ site.url }}">Home</a></li>
-		<li>
-			<a href="#">About</a>
-			<ul class="dl-submenu">
-				<li>
-					<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
-					<h4>{{ site.owner.name }}</h4>
-					<p>{{ site.owner.bio }}</p>
-				</li>
-				<li><a href="{{ site.url }}/about/">Learn More</a></li>
-				{% if site.owner.email %}<li>
-					<a href="mailto:{{ site.owner.email }}"><i class="icon-envelope"></i> Email</a>
-				</li>{% endif %}
-				{% if site.owner.twitter %}<li>
-					<a href="http://twitter.com/{{ site.owner.twitter }}"><i class="icon-twitter"></i> Twitter</a>
-				</li>{% endif %}
-				{% if site.owner.facebook %}<li>
-					<a href="http://facebook.com/{{ site.owner.facebook }}"><i class="icon-facebook"></i> Facebook</a>
-				</li>{% endif %}
-				{% if site.owner.google_plus %}<li>
-					<a href="{{ site.owner.google_plus }}"><i class="icon-google-plus"></i> Google+</a>
-				</li>{% endif %}
-				{% if site.owner.linkedin %}<li>
-					<a href="http://linkedin.com/in/{{ site.owner.linkedin }}"><i class="icon-linkedin"></i> LinkedIn</a>
-				</li>{% endif %}
-				{% if site.owner.github %}<li>
-					<a href="http://github.com/{{ site.owner.github }}"><i class="icon-github"></i> GitHub</a>
-				</li>{% endif %}
-				{% if site.owner.stackexchange %}<li>
-					<a href="{{ site.owner.stackexchange }}"><i class="icon-stackexchange"></i> Stackexchange</a>
-				</li>{% endif %}
-				{% if site.owner.instagram %}<li>
-					<a href="http://instagram.com/{{ site.owner.instagram }}"><i class="icon-instagram"></i> Instagram</a>
-				</li>{% endif %}
-				{% if site.owner.flickr %}<li>
-					<a href="http://www.flickr.com/photos/{{ site.owner.flickr }}"><i class="icon-flickr"></i> Flickr</a>
-				</li>{% endif %}
-				{% if site.owner.tumblr %}<li>
-					<a href="http://{{ site.owner.tumblr }}.tumblr.com"><i class="icon-tumblr"></i> Tumblr</a>
-				</li>{% endif %}
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/posts/">All Posts</a></li>
-				<li><a href="{{ site.url }}/tags/">All Tags</a></li>
-			</ul>
-		</li>
-		{% for link in site.links %}<li>{% if link.external %}<a href="{{ link.url }}">{{ link.title }}</a>{% else %}<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>{% endif %}</li>{% endfor %}
-	</ul><!-- /.dl-menu -->
-</nav><!-- /.dl-menuwrapper -->
+
+<div id="navigation" class="sticky">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="{{ site.url }}{{ site.baseurl }}" class="icon-tree"> {{ site.title }}</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+{% comment %}
+
+    ____  _       __    __     _   __            _             __  _           
+   / __ \(_)___ _/ /_  / /_   / | / /___ __   __(_)___ _____ _/ /_(_)___  ____ 
+  / /_/ / / __ `/ __ \/ __/  /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
+ / _, _/ / /_/ / / / / /_   / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
+/_/ |_/_/\__, /_/ /_/\__/  /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/ 
+        /____/                                 /____/                          
+
+{% endcomment %}
+      <ul class="right">
+        {% for link in site.data.navigation %}
+
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% elsif link.url == '#' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = site.url %}
+              {% endif %}
+
+          {% comment %}   If there are links for right side begin   {% endcomment %}
+          {% if link.side == 'right' %}
+            {% comment %}   If right side WITHOUT dropdown menu do   {% endcomment %}
+            {% if link.dropdown == nil %}
+              <li class="divider"></li>
+              <li{% if link.url == page.url %} class="active"{% endif %}><a href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title }}</a></li>
+
+            {% comment %}   If right side WITH dropdown menu do   {% endcomment %}
+            {% else %}
+
+              <li class="divider"></li>
+              <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
+                <a href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title }}</a>
+
+                  <ul class="dropdown">
+                    {% for dropdown_link in link.dropdown %}
+
+                      {% if dropdown_link.url contains 'http' %}
+                        {% assign domain = '' %}
+                        {% else %}
+                        {% assign domain = site.url %}
+                      {% endif %}
+
+                      <li><a href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                  
+              </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% comment %}   First loop finished 1   {% endcomment %}
+      </ul>
+{% comment %}
+
+    __         ______     _   __            _             __  _           
+   / /   ___  / __/ /_   / | / /___ __   __(_)___ _____ _/ /_(_)___  ____ 
+  / /   / _ \/ /_/ __/  /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
+ / /___/  __/ __/ /_   / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
+/_____/\___/_/  \__/  /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/ 
+                                          /____/                          
+
+{% endcomment %}
+      <ul class="left">
+        {% for link in site.data.navigation %}
+
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% elsif link.url == '#' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = site.url %}
+              {% endif %}
+
+          {% comment %}   If there are links for left side begin   {% endcomment %}
+          {% if link.side == 'left' %}
+
+            {% comment %}   If left side WITHOUT dropdown menu do   {% endcomment %}
+            {% if link.dropdown == nil %}
+              <li{% if link.url == page.url %} class="active"{% endif %}><a href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title }}</a></li>
+              <li class="divider"></li>
+
+            {% comment %}   If left side WITH dropdown menu do   {% endcomment %}
+            {% else %}
+
+              <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
+                <a href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.title }}</a>
+
+                  <ul class="dropdown">
+                    {% for dropdown_link in link.dropdown %}
+
+                      {% if dropdown_link.url contains 'http' %}
+                        {% assign domain = '' %}
+                        {% else %}
+                        {% assign domain = site.url %}
+                      {% endif %}
+
+                      <li><a href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                  
+              </li>
+              <li class="divider"></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% comment %}   Second loop finished   {% endcomment %}
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
