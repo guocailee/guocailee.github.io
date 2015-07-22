@@ -10,7 +10,3 @@
   class: "rss-link"
   title: "Subscribe to RSS"
 
-- name: "sitemap.xml"
-  url: "/sitemap.xml"
-  class: "sitemap-link"
-  title: "Sitemap for Google Webmastertools"
