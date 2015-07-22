@@ -1,65 +1,70 @@
----
-layout: default
-format: post
----
-<div class="row t30">
-	<div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
-		<article itemscope itemtype="http://schema.org/Article">
-			<header>
-				{% if page.image.title %}
-				<figure>
-					<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title escape_once }}" itemprop="image">
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+    __  ____  ______________  _______ ___    __ 
+   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+ / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
+/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+                                                     
+====================================================
+Owner Name: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.1
+Description: Awesome dude, awesome life
+====================================================
+-->
+<head>
+{% include head.html %}
+</head>
+<body class="post-template page" itemscope itemtype="http://schema.org/WebPage">
 
-					{% if page.image.caption_url && page.image.caption %}
-					<figcaption class="text-right">
-						<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
-					</figcaption>
-					{% elsif page.image.caption %}
-					<figcaption class="text-right">
-						{{ page.image.caption }}
-					</figcaption>
-					{% endif %}
-				</figure>
-				{% endif %}
+<main id="notepad-page-container" class="notepad-page-container" role="main">
+    
+    
+        <header class="notepad-page-header">
+            <div class="notepad-page-menu-header">
+                
+                    <a class="notepad-blog-logo" href="{{ site.url }}">
+                        <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo">
+                    </a>
+                
+                
+                
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+{% for link in site.links %}
+            <li>{% if link.external %}
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                {% else %}
+                    <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+                {% endif %} </li>
+{% endfor %}            
+           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+</div>
+            </div>
+            <div class="notepad-page-title row">
+                <div class="small-12 columns">
+                    <h1>{{ page.title }}</h1>
+                </div>
+            </div>
+        </header>
 
-				<span itemprop="name">
-					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
-					<h1>{{ page.title }}</h1>
-				</span>
-			</header>
+<article class="notepad-page-content">
+                    <div>{{ content }}</div>
+</article>
+        <div class="cf"></div>
+    {% include footer.html %}
+</main>
 
-
-			{% if page.teaser %}
-			<p class="teaser" itemprop="description">
-				{{ page.teaser }}
-			</p>
-			{% endif %}
-
-			<span itemprop="articleSection">
-			{{ content }}
-			</span>
-
-			{% if page.show_meta == true %}
-			{% include meta_information.html %}
-			{% endif %}
-
-			{% if page.comments == true %}
-			{% include comments.html %}
-			{% endif %}
-		</article>
-	</div><!-- /.medium-8.columns -->
-
-
-	{% if page.sidebar == "left" %}
-	<div class="medium-4 columns medium-pull-8">
-		{% include sidebar.html %}
-	</div><!-- /.medium-4.columns -->
-	{% endif %}
-
-
-	{% if page.sidebar == "right" %}
-	<div class="medium-4 columns">
-		{% include sidebar.html %}
-	</div><!-- /.medium-4.columns -->
-	{% endif %}
-</div><!-- /.row -->
+{% include scripts.html %}  
+</body>
+</html>

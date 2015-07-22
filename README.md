@@ -1,50 +1,27 @@
+Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
+  
+Main Features:
 
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
+* Zurb Foundation 5 – css framework
+* Scss files with settings file
+* Fullscreen post covers with header wich will be bright or dark according to background image
+* Fast and light
+* Font Awesome
+* Disqus comments integration
 
-## A Responsive Jekyll Theme: *Feeling Responsive*
+You can set post image covers by using only Kramdown narkdown, just place something like this: `![cover-image](http://path-to-your-image.jpg)`
 
-Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://phlow.github.io/feeling-responsive/>.
+Credits:
 
-To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
+* Zurb Foundation 5 [http://foundation.zurb.com/](http://foundation.zurb.com/)
+* Font Awesome [http://fontawesome.io](http://fontawesome.io)
+* Google fonts [http://www.google.com/fonts](http://www.google.com/fonts)
+* Background check [http://kennethcachia.com/background-check](http://kennethcachia.com/background-check)
+* Codrops article: [http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/](http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/)
+* There are also tools like jQuery, Modernizr, Normalize.
 
-And what license is *Feeling Responsive* released under? [This one][2].
-
-
-
-## Why use this theme?
-
-Feeling Responsive is heavily customizable.
-
-1. Language-Support :)
-2. Optimized for speed and it's responsive.
-3. Built on Foundation Framework.
-4. Six different Headers.
-5. Customizable navigation, footer,...
-
-**[More ›][3]**
-
+If you'd like to give me credit somewhere on your blog or tweet a shout out to [@hmfaysal](https://twitter.com/hmfaysal), that would be pretty sweet.
 
 
-## Video Tutorial
-
-Click the image to [watch the YouTube-Video-Tutorial][4].
-
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
-
-
-
-
-
-
-
-
- [1]: http://phlow.github.io/feeling-responsive/documentation/
- [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
- [3]: http://phlow.github.io/feeling-responsive/info/
- [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
- [5]: #
- [6]: #
- [7]: #
- [8]: #
- [9]: #
- [10]: #
+Warm Regards and Stay Creative,  
+Hossain Mohd. Faysal
