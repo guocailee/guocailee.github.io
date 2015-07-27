@@ -1,7 +1,7 @@
 title:            juyod's Blog
 description:      "Blogging is fun"
 logo:             logo.jpeg
-disqus_shortname: hmfaysal
+disqus_shortname: Juyod
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -17,7 +17,7 @@ owner:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        guocailee@gamil.com 
+  twitter:        GuocaiLee
   github:         juyod 
 
 
@@ -68,8 +68,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/Notepad/'
-  relativeLinks: 'http://hmfaysal.github.io/Notepad/links.jsonp'
+  siteurl: 'http://juyod.github.io/'
+  relativeLinks: 'http://juyod.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:
