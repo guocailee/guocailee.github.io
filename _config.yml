@@ -1,7 +1,7 @@
-title:            juyod's Blog
-description:      "Blogging is fun"
+title:            阿宅的博客
+description:      "行者 默言"
 logo:             logo.jpeg
-disqus_shortname: Juyod
+disqus_shortname: 阿宅
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -11,7 +11,7 @@ url:        	  http://juyod.github.io/
 
 # Owner/author information
 owner:
-  name:           Juyod
+  name:           阿宅
   avatar:         hmfaysal.jpg
   email:          guocailee@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
