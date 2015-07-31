@@ -1,5 +1,5 @@
 title:            阿宅的博客
-description:      "行者 默言"
+description:      "君子必慎其独也"
 logo:             logo.jpeg
 disqus_shortname: 阿宅
 share:            true
@@ -30,15 +30,15 @@ bing_verify:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: 首页
     url: /
     external: false
     icon: home
-  - title: Featured Posts
+  - title: 推荐博文
     url: /featured
-  - title: Categories
+  - title: 分类
     url: /categories
-  - title: About
+  - title: 关于我
     url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

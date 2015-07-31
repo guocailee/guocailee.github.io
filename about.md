@@ -1,20 +1,12 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Hossain Mohd Faysal
-tags: [Hossain, Mohd, Faysal, hmfaysal]
+title:  juyod
+tags: [author,juyod]
 imagefeature: fourseasons.jpg
 chart: true
 ---
-<figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
-  <figcaption>Hossain Mohammad Faysal</figcaption>
-</figure>
 
-{% assign total_words = 0 %}
-{% assign total_readtime = 0 %}
-{% assign featuredcount = 0 %}
-{% assign statuscount = 0 %}
 
 {% for post in site.posts %}
     {% assign post_words = post.content | strip_html | number_of_words %}
