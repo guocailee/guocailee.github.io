@@ -90,7 +90,7 @@ Description: Awesome dude, awesome life
         <section class="notepad-disqus row">
     <div class="small-12 columns">
         <h1 class="notepad-comments-header">Comments</h1>
-        <div class="ds-thread" data-thread-key="{{page.url}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
+        <div class="ds-thread" data-thread-key="{{page.url}}" data-title="{{page.title}}" data-url="{{ site.url }}{{page.url}}"></div>
         {% include disqus_comments.html %}
     </div>
 </section>
