@@ -10,7 +10,6 @@ share: true
 
 ---
 
-The Scotchmas Day 2 giveaway can be found at the end of this article.
 
 Every developer strives to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge – providing an organization structure for common issues in a particular circumstance.
 
@@ -22,10 +21,14 @@ In this post, I want to discuss these common patterns to expose ways to improve 
 
 The design patterns in question include the following:
 
-Module
-Prototype
-Observer
-Singleton
+*. Module
+
+*. Prototype
+
+*. Observer
+
+*. Singleton
+
 Each pattern consists of many properties. However, I will emphasize the following key points:
 
 Context: Where/under what circumstances is the pattern used?
@@ -40,18 +43,20 @@ For those that are familiar with object-oriented languages, modules are JavaScri
 
 Modules should be Immediately-Invoked-Function-Expressions (IIFE) to allow for private scopes – that is, a closure that protect variables and methods (however, it will return an object instead of a function). This is what it looks like:
 
-```javascript
+{% highlight javascript %}
+
 (function() {
-
     // declare private variables and/or functions
-
     return : {
       // declare public variables and/or functions
     }
-
 })();
-```
+
+{% endhighlight %}
+
 Here we instantiate the private variables and/or functions before returning our object that we want to return. Code outside of our closure is unable to access these private variables since it is not in the same scope. Let’s take a more concrete implementation:
+
+{% highlight javascript %}
 
 var HTMLChanger = (function() {
   var contents = 'contents'
@@ -70,13 +75,18 @@ var HTMLChanger = (function() {
 
 })();
 
+
 HTMLChanger.callChangeHTML();       // Outputs: 'contents'
 console.log(HTMLChanger.contents);  // undefined
+{% endhighlight %}
+
 Notice that callChangeHTML binds to the returned object and can be referenced within the HTMLChanger namespace. However, when outside the module, contents are unable to be referenced.
 
 Revealing Module Pattern
 
 A variation of the module pattern is called the Revealing Module Pattern. The purpose is to maintain privacy for all variables and methods only finally revealed in the returned object literal. The direct implementation looks like this:
+
+```javascript
 
 var Exposer = (function() {
   var privateVariable = 10;
@@ -103,6 +113,7 @@ var Exposer = (function() {
 Exposer.first();        // Output: This is a method I want to expose!
 Exposer.second();       // Output: Inside a private method!
 Exposer.methodToExpose; // undefined
+```
 
 Although this looks much cleaner, an obvious disadvantage is unable to reference the private methods. This can pose unit testing challenges. Similarly, the public behaviors are non-overridable.
 
@@ -119,6 +130,8 @@ This UML describes how a prototype interface is used to clone concrete implement
 
 To clone an object, a constructor must exist to instantiate the first object. Next, by using the keyword prototype variables and methods bind to the object’s structure. Let’s look at a basic example:
 
+```javascript
+
 var TeslaModelS = function() {
   this.numWheels    = 4;
   this.manufacturer = 'Tesla';
@@ -132,7 +145,11 @@ TeslaModelS.prototype.go = function() {
 TeslaModelS.prototype.stop = function() {
   // Apply brake pads
 }
+```
+
 The constructor allows the creation of a single TeslaModelS object. When a creating new TeslaModelS object, it will retain the states initialized in the constructor. Additionally, maintaining the function go and stop is easy since we declared them with prototype. A synonymous way to extend functions on the prototype as described below:
+
+```javascript
 
 var TeslaModelS = function() {
   this.numWheels    = 4;
@@ -148,12 +165,15 @@ TeslaModelS.prototype = {
     // Apply brake pads
   }
 }
+```
+
 Revealing Prototype Pattern
 
 Similar to Module pattern, the Prototype pattern also has a revealing variation. The Revealing Prototype Pattern provides encapsulation with public and private members since it returns an object literal.
 
 Since we are returning an object, we will prefix the prototype object with a function. By extending our example above, we can choose what we want to expose in the current prototype to preserve their access levels:
 
+{% highlight javascript %}
 var TeslaModelS = function() {
   this.numWheels    = 4;
   this.manufacturer = 'Tesla';
@@ -172,6 +192,8 @@ TeslaModelS.prototype = function() {
     pressGasPedal: go
   }
 }();
+{% endhighlight %}
+
 Note how the functions stop and go will be shielded from the returning object due to being outside of returned object’s scope. Since JavaScript natively supports prototypical inheritance, there is no need to rewrite underlying features.
 
 Observer Design Pattern
