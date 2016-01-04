@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "4 JavaScript Design Patterns You Should Know"
-description: "翻译自http://12factor.net/"
+description: "javascript 设计模式"
 category: front-end
-tags: [factor app,翻译]
-imagefeature: cover/cover9.jpg
+tags: [front-end,Design Patterns]
+imagefeature: cover/cover1.jpg
 comments: true
 share: true
+
 ---
 
 The Scotchmas Day 2 giveaway can be found at the end of this article.
@@ -39,6 +40,7 @@ For those that are familiar with object-oriented languages, modules are JavaScri
 
 Modules should be Immediately-Invoked-Function-Expressions (IIFE) to allow for private scopes – that is, a closure that protect variables and methods (however, it will return an object instead of a function). This is what it looks like:
 
+```javascript
 (function() {
 
     // declare private variables and/or functions
@@ -48,6 +50,7 @@ Modules should be Immediately-Invoked-Function-Expressions (IIFE) to allow for p
     }
 
 })();
+```
 Here we instantiate the private variables and/or functions before returning our object that we want to return. Code outside of our closure is unable to access these private variables since it is not in the same scope. Let’s take a more concrete implementation:
 
 var HTMLChanger = (function() {
