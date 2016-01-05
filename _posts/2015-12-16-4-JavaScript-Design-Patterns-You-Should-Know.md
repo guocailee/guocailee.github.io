@@ -21,13 +21,13 @@ In this post, I want to discuss these common patterns to expose ways to improve 
 
 The design patterns in question include the following:
 
-* Module
+**+* Module
 
-* Prototype
+*** Prototype
 
-* Observer
+*** Observer
 
-* Singleton
+*** Singleton
 
 Each pattern consists of many properties. However, I will emphasize the following key points:
 
