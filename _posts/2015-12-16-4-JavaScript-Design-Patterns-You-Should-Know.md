@@ -4,9 +4,10 @@ title: "你应该知道的四种JavaScript设计模式"
 description: "javascript 设计模式"
 category: front-end
 tags: [front-end,Design Patterns]
-imagefeature: cover/cover1.jpg
+imagefeature: cover/cover9.jpg
 comments: true
 share: true
+featured: true
 
 ---
 
@@ -21,13 +22,10 @@ In this post, I want to discuss these common patterns to expose ways to improve 
 
 The design patterns in question include the following:
 
-**+* Module
-
-*** Prototype
-
-*** Observer
-
-*** Singleton
+* Module
+* Prototype
+* Observer
+* Singleton
 
 Each pattern consists of many properties. However, I will emphasize the following key points:
 
@@ -209,7 +207,9 @@ There are many times when one part of the application changes, other parts needs
 
 Another prime example is the model-view-controller (MVC) architecture; The view updates when the model changes. One benefit is decoupling the view from the model to reduce dependencies.
 
-Observer Design Pattern [Observer Design Pattern on Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/1000px-Observer.svg.png)
+
+[Observer Design Pattern on Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern)
 
 As shown in the UML diagram, the necessary objects are the subject, observer, and concrete objects. The subject contains references to the concrete observers to notify for any changes. The Observer object is an abstract class that allows for the concrete observers to implements the notify method.
 
@@ -228,9 +228,9 @@ $scope.userNameChanged = function(name) {
     $scope.$emit('nameChanged', {name: name});
 };
 ```
-With the observer pattern, it is important to distinguish the independent object or the subject.
+With the observer pattern, it is important to distinguish the independent object or the **subject**.
 
-It is important to note that although the observer pattern does offer many advantages, one of the disadvantages is a significant drop in performance as the number of observers increased. One of the most notorious observers is watchers. In AngularJS, we can watch variables, functions, and objects. The $$digest cycle runs and notifies each of the watchers with the new values whenever a scope object is modified.
+It is important to note that although the observer pattern does offer many advantages, one of the disadvantages is a significant drop in performance as the number of observers increased. One of the most notorious observers is **watchers**. In AngularJS, we can **watch** variables, functions, and objects. The **$$digest** cycle runs and notifies each of the watchers with the new values whenever a scope object is modified.
 
 We can create our own Subjects and Observers in JavaScript. Let’s see how this is implemented:
 
@@ -348,12 +348,16 @@ var printer = (function () {
 ```
 The create method is private because we do not want the client to access this, however, notice that the getInstance method is public. Each officer worker can generate a printer instance by interacting with the getInstance method, like so:
 
+```javascript
 var officePrinter = printer.getInstance();
+
+```
+
 In AngularJS, Singletons are prevalent, the most notable being services, factories, and providers. Since they maintain state and provides resource accessing, creating two instances defeats the point of a shared service/factory/provider.
 
 Race conditions occur in multi-threaded applications when more than one thread tries to access the same resource. Singletons are susceptible to race conditions, such that if no instance were initialized first, two threads could then create two objects instead of returning and instance. This defeats the purpose of a singleton. Therefore, developers must be privy to synchronization when implementing singletons in multithreaded applications.
 
-Conclusion
+##Conclusion
 
 Design patterns are frequently used in larger applications, though to understand where one might be advantageous over another, comes with practice.
 
