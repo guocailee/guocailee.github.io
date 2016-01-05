@@ -56,7 +56,7 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 prose:
   rooturl: '_posts'
-  siteurl: 'http://juyod.github.io/'
+  siteurl: 'http://juyod.github.io'
   relativeLinks: 'http://juyod.github.io/links.jsonp'
   media: 'images'
   metadata:

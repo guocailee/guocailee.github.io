@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "4 JavaScript Design Patterns You Should Know"
+title: "你应该知道的四种JavaScript设计模式"
 description: "javascript 设计模式"
 category: front-end
 tags: [front-end,Design Patterns]
@@ -11,7 +11,7 @@ share: true
 ---
 
 
-Every developer strives to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge – providing an organization structure for common issues in a particular circumstance.
+>Every developer strives to write maintainable, readable, and reusable code. Code structuring becomes more important as applications become larger. Design patterns prove crucial to solving this challenge – providing an organization structure for common issues in a particular circumstance.
 
 JavaScript web developers frequently interact with design patterns, even unknowingly, when creating applications.
 
@@ -21,21 +21,23 @@ In this post, I want to discuss these common patterns to expose ways to improve 
 
 The design patterns in question include the following:
 
-*. Module
+* Module
 
-*. Prototype
+* Prototype
 
-*. Observer
+* Observer
 
-*. Singleton
+* Singleton
 
 Each pattern consists of many properties. However, I will emphasize the following key points:
 
-Context: Where/under what circumstances is the pattern used?
-Problem: What are we trying to solve?
-Solution: How does using this pattern solve our proposed problem?
-Implementation: What does the implementation look like?
-Module Design Pattern
+1. **Context**: Where/under what circumstances is the pattern used?
+2. **Problem**: What are we trying to solve?
+3. **Solution**: How does using this pattern solve our proposed problem?
+4. **Implementation**: What does the implementation look like?
+
+---
+##Module Design Pattern
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code.
 
@@ -43,7 +45,7 @@ For those that are familiar with object-oriented languages, modules are JavaScri
 
 Modules should be Immediately-Invoked-Function-Expressions (IIFE) to allow for private scopes – that is, a closure that protect variables and methods (however, it will return an object instead of a function). This is what it looks like:
 
-{% highlight javascript %}
+```javascript
 
 (function() {
     // declare private variables and/or functions
@@ -52,11 +54,12 @@ Modules should be Immediately-Invoked-Function-Expressions (IIFE) to allow for p
     }
 })();
 
-{% endhighlight %}
+```
 
 Here we instantiate the private variables and/or functions before returning our object that we want to return. Code outside of our closure is unable to access these private variables since it is not in the same scope. Let’s take a more concrete implementation:
 
-{% highlight javascript %}
+```javascript
+
 
 var HTMLChanger = (function() {
   var contents = 'contents'
@@ -78,11 +81,11 @@ var HTMLChanger = (function() {
 
 HTMLChanger.callChangeHTML();       // Outputs: 'contents'
 console.log(HTMLChanger.contents);  // undefined
-{% endhighlight %}
+```
 
 Notice that callChangeHTML binds to the returned object and can be referenced within the HTMLChanger namespace. However, when outside the module, contents are unable to be referenced.
 
-Revealing Module Pattern
+####Revealing Module Pattern
 
 A variation of the module pattern is called the Revealing Module Pattern. The purpose is to maintain privacy for all variables and methods only finally revealed in the returned object literal. The direct implementation looks like this:
 
@@ -113,18 +116,18 @@ var Exposer = (function() {
 Exposer.first();        // Output: This is a method I want to expose!
 Exposer.second();       // Output: Inside a private method!
 Exposer.methodToExpose; // undefined
+
 ```
 
 Although this looks much cleaner, an obvious disadvantage is unable to reference the private methods. This can pose unit testing challenges. Similarly, the public behaviors are non-overridable.
 
-Prototype Design Pattern
+##Prototype Design Pattern
 
 Any JavaScript developer has either seen the keyword prototype, confused by the prototypical inheritance or implemented prototypes in their code. The Prototype design pattern relies on the JavaScript [prototypical inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain). The prototype model is used mainly for creating objects in performance-intensive situations.
 
 The objects created are clones (shallow clones) of the original object that are passed around. One use case of the prototype pattern is performing an extensive database operation to create an object used for other parts of the application. If another process needs to use this object, instead of having to perform this substantial database operation, it would be advantageous to clone the previously created object.
 
-Prototype Design Pattern
-Prototype Design Pattern on Wikipedia
+![](https://upload.wikimedia.org/wikipedia/commons/1/14/Prototype_UML.svg)
 
 This UML describes how a prototype interface is used to clone concrete implementations.
 
@@ -145,6 +148,7 @@ TeslaModelS.prototype.go = function() {
 TeslaModelS.prototype.stop = function() {
   // Apply brake pads
 }
+
 ```
 
 The constructor allows the creation of a single TeslaModelS object. When a creating new TeslaModelS object, it will retain the states initialized in the constructor. Additionally, maintaining the function go and stop is easy since we declared them with prototype. A synonymous way to extend functions on the prototype as described below:
@@ -165,6 +169,7 @@ TeslaModelS.prototype = {
     // Apply brake pads
   }
 }
+
 ```
 
 Revealing Prototype Pattern
@@ -173,7 +178,8 @@ Similar to Module pattern, the Prototype pattern also has a revealing variation.
 
 Since we are returning an object, we will prefix the prototype object with a function. By extending our example above, we can choose what we want to expose in the current prototype to preserve their access levels:
 
-{% highlight javascript %}
+```javascript
+
 var TeslaModelS = function() {
   this.numWheels    = 4;
   this.manufacturer = 'Tesla';
@@ -192,19 +198,18 @@ TeslaModelS.prototype = function() {
     pressGasPedal: go
   }
 }();
-{% endhighlight %}
+
+```
 
 Note how the functions stop and go will be shielded from the returning object due to being outside of returned object’s scope. Since JavaScript natively supports prototypical inheritance, there is no need to rewrite underlying features.
 
-Observer Design Pattern
+##Observer Design Pattern
 
 There are many times when one part of the application changes, other parts needs to be updated. In AngularJS, if the $scope object updates, an event can be triggered to notify another component. The observer pattern incorporates just that – if an object is modified it broadcasts to dependent objects that a change has occurred.
 
 Another prime example is the model-view-controller (MVC) architecture; The view updates when the model changes. One benefit is decoupling the view from the model to reduce dependencies.
 
-```Observer Design Pattern
-
-[Observer Design Pattern on Wikipedia]
+Observer Design Pattern [Observer Design Pattern on Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern)
 
 As shown in the UML diagram, the necessary objects are the subject, observer, and concrete objects. The subject contains references to the concrete observers to notify for any changes. The Observer object is an abstract class that allows for the concrete observers to implements the notify method.
 
