@@ -96,7 +96,7 @@ Testing is the basis on which Continuous Deployment is built. Tests make softwar
 ###EXAMPLE
 [This script tests](https://gist.github.com/flomotlik/5113098#file-translatetest-coffee) Google Translate to make sure it translates **"good morning"** from German to English:
 
-```coffescript
+```coffeescript
 
 #Run with casperjs test translate.coffee
  
