@@ -3,7 +3,7 @@ layout: post
 title: "你应该知道的四种JavaScript设计模式"
 description: "javascript 设计模式"
 category: front-end
-tags: [front-end,Design Patterns]
+tags: [front-end,DesignPatterns]
 imagefeature: cover/cover9.jpg
 comments: true
 share: true
