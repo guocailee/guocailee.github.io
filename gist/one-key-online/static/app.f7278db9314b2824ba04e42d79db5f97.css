@@ -309,7 +309,7 @@ th {
 @font-face {
   font-family: Glyphicons Halflings;
   src: url(f4769f9bdb7466be65088239c12046d1.eot);
-  src: url(f4769f9bdb7466be65088239c12046d1.eot?#iefix) format("embedded-opentype"), url(glyphicons-halflings-regular.woff2?448c34a) format("woff2"), url(glyphicons-halflings-regular.woff?fa27723) format("woff"), url(e18bbf611f2a2e43afc071aa2f4e1512.ttf) format("truetype"), url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICI4OTg4OTY4ODE0N2JkNzU3NWQ2MzI3MTYwZDY0ZTc2MC5zdmciOw==#glyphicons_halflingsregular) format("svg")
+  src: url(f4769f9bdb7466be65088239c12046d1.eot?#iefix) format("embedded-opentype"), url(glyphicons-halflings-regular.woff2?448c34a) format("woff2"), url(glyphicons-halflings-regular.woff?fa27723) format("woff"), url(/static/e18bbf611f2a2e43afc071aa2f4e1512.ttf) format("truetype"), url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICI4OTg4OTY4ODE0N2JkNzU3NWQ2MzI3MTYwZDY0ZTc2MC5zdmciOw==#glyphicons_halflingsregular) format("svg")
 }
 
 .glyphicon {
@@ -6907,7 +6907,7 @@ button.list-group-item-danger.active:hover {
 }
 
 .panel-danger>.panel-heading+.panel-collapse>.panel-body {
-  border-t/p-color: #ebccd1
+  border-top-color: #ebccd1
 }
 
 .panel-danger>.panel-heading .badge {
