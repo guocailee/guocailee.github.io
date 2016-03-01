@@ -6907,7 +6907,7 @@ button.list-group-item-danger.active:hover {
 }
 
 .panel-danger>.panel-heading+.panel-collapse>.panel-body {
-  border-top-color: #ebccd1
+  border-t/p-color: #ebccd1
 }
 
 .panel-danger>.panel-heading .badge {
