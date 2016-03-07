@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>one-key-online</title>
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-  <iframe id="mainFrame" name="mainFrame" width="100%" src="index.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+  <iframe id="mainFrame" name="mainFrame" width="100%" src="http://58.23.16.163:8088/portMgt/onekeyonline/index.html?pwsId=999" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
 </body>
 <script type="text/javascript">
 var browserVersion = window.navigator.userAgent.toUpperCase();
@@ -69,7 +70,7 @@ function startInit(iframeId, minHeight) {
   }
   iframeTime = window.setInterval("reinitIframe('" + iframeId + "'," + minHeight + ")", 100);
 }
-startInit('mainFrame', 560);
+startInit('mainFrame', 800);
 
 function getPwsId() {
   return '999';
