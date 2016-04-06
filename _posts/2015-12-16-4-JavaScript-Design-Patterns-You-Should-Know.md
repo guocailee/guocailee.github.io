@@ -35,6 +35,7 @@ Each pattern consists of many properties. However, I will emphasize the followin
 4. **Implementation**: What does the implementation look like?
 
 ---
+
 ## Module Design Pattern
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code.
