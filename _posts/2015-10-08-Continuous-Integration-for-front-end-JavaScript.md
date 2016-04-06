@@ -9,7 +9,7 @@ comments: true
 share: true
 ---
 
-##Why You Should Use Continuous Integration and Continuous Deployment
+## Why You Should Use Continuous Integration and Continuous Deployment
 
 >The following is a guest post by Florian Motlik. Florian is CTO of [Codeship](https://www.codeship.com/), a hosted Continuous Integration and Continuous Deployment platform. What the heck is that, you might ask? It's kind of a philosophy and toolset for working on websites. That is perhaps a bit too simplified, so I'll let Florian explain.
 
@@ -25,13 +25,13 @@ First, we will take a close look at Continuous Integration and show you how to g
 
 With both in place, your development team will be orders of magnitude more efficient.
 
-##Continuous Integration
+## Continuous Integration
 
 Automation is a cornerstone of a great development workflow. Every task that can be done by a machine should be. Automation gives you the time to focus. Testing is one such task.
 
 Through testing, you can be sure that the most important steps your customers will take through your system are working, regardless of the changes you make. This gives you the confidence to experiment, implement new features, and ship updates quickly.
 
-###Start testing at the top
+### Start testing at the top
 
 Good testing begins with viewing the app from a user’s perspective. What are the typical workflows? What features and steps do users go through often?
 
@@ -50,7 +50,7 @@ From this strong base of tests that make sure the workflows are working, you can
 
 With all those tools in hand, the single most important step you can take for testing is getting started. It pays off immediately, and not just from a tech perspective. You can read about [the business advantages of Continuous Integration](http://blog.codeship.com/benefits-of-continuous-integration/) in this blog post by Joe Green.
 
-###Run your tests continuously
+### Run your tests continuously
 
 Humans make mistakes. Sometimes people consider a change so small it can’t possibly break the app, so they don’t run tests. Then your product goes down and nobody knows why.
 Automated tests can only show their true power when you run them continuously and for every change. They have to be run on an automated and separate system to prevent the ‘It works on my machine’ syndrome. Only if the Continuous Integration infrastructure tells you the tests pass, the tests pass.
@@ -63,7 +63,7 @@ Continuous Integration is the first, but very important step in Continuous Deplo
 
 If you'd like to learn more about it, Martin Fowler has released a great and very in-depth article about Continuous Integration on [his blog](http://martinfowler.com/articles/continuousIntegration.html)
 
-##Continuous Deployment
+## Continuous Deployment
 
 Code rots if it doesn’t run somewhere. External dependencies are updated, server packages installed, API’s change or operating systems replaced. Often we do not have the ability to control every part of our infrastructure. We rely on other products and companies to maintain parts of our stack. All of these changes can break your app without you realizing it.
 
@@ -71,7 +71,7 @@ This is why Continuous Deployment is incredibly important. Whenever the main dev
 
 This helps you find problems early and fix them while it is still cheap. An important concept to understand when starting with Continuous Deployment are deployment pipelines.
 
-###Deployment Pipelines
+### Deployment Pipelines
 
 A deployment pipeline defines all steps necessary to go from your codebase to the production website. Automating these steps is crucial to have fast deployments. But often, deployment pipelines also include manual steps, like a product manager signing off on a new release.
 
@@ -81,11 +81,11 @@ Once you set up a Deployment Pipeline and automate the steps, you are in a posit
 
 It’s amazing how much lower the cost of bringing a new software product to market has gotten in last couple of years. It has never been easier or cheaper to build great software. This levels the playing field between you and your competition. You need to ship new features faster than your competition while delivering better and stable long term quality. Continuous Deployment is one of the techniques that will help you to get there.
 
-###How can I get started?
+### How can I get started?
 
 After interviews with dozens of companies and the feedback from thousands of developers using our product we’ve identified several steps you can take to get started with Continuous Deployment.
 
-###TEST TEST TEST, BUT BE SMART ABOUT IT
+### TEST TEST TEST, BUT BE SMART ABOUT IT
 
 Testing is the first step that needs to be taken. You need to get to a point where you can change almost any part of your system and be sure you didn’t break any other feature because your tests will catch those errors. Once you are at this point, it liberates you from having to think about impacts this change might have. You can now experiment with your product and iterate to build exactly what your customers want and pay for.
 
@@ -93,12 +93,12 @@ Tests are not there to make your developers happy. They are there to build a sta
 
 Testing is the basis on which Continuous Deployment is built. Tests make software as Clemens, one of our developers, explained in his blog post.
 
-###EXAMPLE
+### EXAMPLE
 [This script tests](https://gist.github.com/flomotlik/5113098#file-translatetest-coffee) Google Translate to make sure it translates **"good morning"** from German to English:
 
 ```coffeescript
 
-#Run with casperjs test translate.coffee
+# Run with casperjs test translate.coffee
  
 casper.start 'http://translate.google.com/', ->
   @.sendKeys('#source', 'Guten Tag');
@@ -117,24 +117,24 @@ casper.run ->
 
 [CasperJS](http://casperjs.org/) helps you to start testing your application quickly, and it will scale up to test more complex scenarios as you need.
 
-###AUTOMATE DEPLOYMENT
+### AUTOMATE DEPLOYMENT
 Every step in your deployment should be automated. Once set up, you should never have to think about which steps need to be taken. Every choice and every manual task leads to possible mistakes, so you simply do it less often. By automating every part of your deployment you can push new features, but more importantly, push fixes very quickly. Continuous Deployment works because of automation, so don’t skip this step.
 
-###AUTOMATE ROLLBACK
+### AUTOMATE ROLLBACK
 When pushing quickly you also want to be able to go back to an earlier state easily. Otherwise you won’t feel safe enough to do as regularly as you should be.
 
 Automated Rollback includes your codebase as well as your database. Make sure you regularly backup your database and use those backups to recreate your system on test machines. If you don’t regularly restore your backups you can’t be sure they will work when you desperately need them.
 
-###DEPLOY TO STAGING
+### DEPLOY TO STAGING
 Create a staging environment and push your master branch or main line of development into that Staging application any time changes are made. This Staging application is your first line of defense and helps to review all changes before going into production. You can even run automated tests against Staging to make sure it works as expected.
 
-###USE YOUR STAGING ENVIRONMENT
+### USE YOUR STAGING ENVIRONMENT
 If you use your product in your daily work, use your Staging and not your Production server. As you push changes continuously to Staging, you will see first hand when something is broken as it immediately impacts your team. "Eating your own dog food" makes all of your developers aware when the quality drops.
 
-###AUTOMATICALLY DEPLOY TO PRODUCTION
+### AUTOMATICALLY DEPLOY TO PRODUCTION
 As a final step, continuously deploy to your Production environment. This will truly change the way your organization works. There will be no more fear in changing your site. This means you can iterate quickly on new features, but if you ship a bug, you can quickly ship a fix as well. You are not tied to arbitrary cycles that slow down your team.
 
-##Conclusions
+## Conclusions
 
 Moving to Continuous Deployment will change your development dramatically. It will make you more productive and lead to a more stable and better product. There are steps like automated testing that you need to get started with first. Automated testing is not a tool to build better software, but a process to build a better product for your users. Once set up, you can then reap the benefits of deploying new versions several times a day.
 

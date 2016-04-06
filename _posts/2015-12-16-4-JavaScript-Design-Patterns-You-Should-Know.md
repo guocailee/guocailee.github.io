@@ -35,7 +35,7 @@ Each pattern consists of many properties. However, I will emphasize the followin
 4. **Implementation**: What does the implementation look like?
 
 ---
-##Module Design Pattern
+## Module Design Pattern
 
 JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components. This provides loose coupling to support well-structured code.
 
@@ -83,7 +83,7 @@ console.log(HTMLChanger.contents);  // undefined
 
 Notice that callChangeHTML binds to the returned object and can be referenced within the HTMLChanger namespace. However, when outside the module, contents are unable to be referenced.
 
-####Revealing Module Pattern
+#### Revealing Module Pattern
 
 A variation of the module pattern is called the Revealing Module Pattern. The purpose is to maintain privacy for all variables and methods only finally revealed in the returned object literal. The direct implementation looks like this:
 
@@ -119,7 +119,7 @@ Exposer.methodToExpose; // undefined
 
 Although this looks much cleaner, an obvious disadvantage is unable to reference the private methods. This can pose unit testing challenges. Similarly, the public behaviors are non-overridable.
 
-##Prototype Design Pattern
+## Prototype Design Pattern
 
 Any JavaScript developer has either seen the keyword prototype, confused by the prototypical inheritance or implemented prototypes in their code. The Prototype design pattern relies on the JavaScript [prototypical inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain). The prototype model is used mainly for creating objects in performance-intensive situations.
 
@@ -201,7 +201,7 @@ TeslaModelS.prototype = function() {
 
 Note how the functions stop and go will be shielded from the returning object due to being outside of returned object’s scope. Since JavaScript natively supports prototypical inheritance, there is no need to rewrite underlying features.
 
-##Observer Design Pattern
+## Observer Design Pattern
 
 There are many times when one part of the application changes, other parts needs to be updated. In AngularJS, if the $scope object updates, an event can be triggered to notify another component. The observer pattern incorporates just that – if an object is modified it broadcasts to dependent objects that a change has occurred.
 
@@ -357,7 +357,7 @@ In AngularJS, Singletons are prevalent, the most notable being services, factori
 
 Race conditions occur in multi-threaded applications when more than one thread tries to access the same resource. Singletons are susceptible to race conditions, such that if no instance were initialized first, two threads could then create two objects instead of returning and instance. This defeats the purpose of a singleton. Therefore, developers must be privy to synchronization when implementing singletons in multithreaded applications.
 
-##Conclusion
+## Conclusion
 
 Design patterns are frequently used in larger applications, though to understand where one might be advantageous over another, comes with practice.
 
