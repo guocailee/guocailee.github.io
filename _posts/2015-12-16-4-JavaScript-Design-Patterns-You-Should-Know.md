@@ -3,7 +3,7 @@ layout: post
 title: "你应该知道的四种JavaScript设计模式"
 description: "javascript 设计模式"
 category: FE
-tags: [javascript,Design Pattern]
+tags: [javascript,Design Pattern,translate]
 comments: true
 share: true
 featured: true
