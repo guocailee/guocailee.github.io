@@ -505,6 +505,7 @@ blockquote, q {
 
 #### 多边框
 　　元素必须是相对定位，且具有足够的padding来显示多余的边框：
+
 ```css
 #borders {
    position:relative;
