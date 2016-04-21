@@ -14,6 +14,7 @@ share: true
 #### 垂直对齐
 
 　　如果你之前遇到过这个问题，你就应该知道它是多么的烦人，幸运的是，现在你可以使用CSS3变换来解决这个问题：
+
 ```css
 .vc{
     position: relative;
@@ -312,6 +313,7 @@ selector {
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
 ```
+
 #### 清除浮动Clearfix
 
 ```css
@@ -339,7 +341,8 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 }
 ```
 
-####. iPad 定向CSS
+#### iPad 定向CSS
+
 ```css
 <!-- css -->
 @media only screen and (max-device-width: 1024px) and (orientation:portrait) {
@@ -348,6 +351,7 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 @media only screen and (max-device-width: 1024px) and (orientation:landscape) {
     .portrait { display: none; }
 }
+
 ```
   
 ```html
