@@ -49,7 +49,7 @@ Modules should be Immediately-Invoked-Function-Expressions (IIFE) to allow for p
 (function() {
     // declare private variables and/or functions
     return : {
-      // declare public variables and/or functions
+    // declare public variables and/or functions
     }
 })();
 
