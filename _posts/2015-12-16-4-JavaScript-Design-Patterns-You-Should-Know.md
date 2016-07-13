@@ -3,8 +3,7 @@ layout: post
 title: "你应该知道的四种JavaScript设计模式"
 description: "javascript 设计模式"
 category: FE
-tags: [javascript,Design Pattern]
-imagefeature: cover/cover9.jpg
+tags: [javascript,Design Pattern,translate]
 comments: true
 share: true
 featured: true
@@ -208,7 +207,7 @@ There are many times when one part of the application changes, other parts needs
 
 Another prime example is the model-view-controller (MVC) architecture; The view updates when the model changes. One benefit is decoupling the view from the model to reduce dependencies.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/1000px-Observer.svg.png)
+![](/images/post/1000px-Observer.svg.png)
 
 [Observer Design Pattern on Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern)
 
