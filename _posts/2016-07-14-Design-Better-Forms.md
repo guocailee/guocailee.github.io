@@ -32,27 +32,27 @@ share: true
 
 ---
 
-### Group labels with their inputs
+### 把标签跟它对应的输入域放一起
 
 ![](/images/post/better-forms/4.jpeg)
 
-> Present the label and input close together, and make sure there is enough height between the fields so users don’t get confused.
+> 将标签与输入框放得足够近，并确保每对都有足够的距离
 
 ---
 
-### Avoid all caps
+### 避免全大写字母
 
 ![](/images/post/better-forms/5.jpeg)
 
-> All caps is more difficult to read and scan.
+> 全大写字母不利于用户查看
 
 ---
 
-### Show all selection options if under 6
+### 如果选择个数少于6,那么应该全部显示出来
 
 ![](/images/post/better-forms/6.jpeg)
 
-> Placing options in a selector drop-down requires two clicks, and hides the options. Use an input selector if there are over 5 options. Incorporate contextual search within the drop-down if there are over 25 options.
+> 下拉选择框，至少需要用户进行两次的点击，并且无法默认显示选择项。如果选择项超过
 
 ---
 
@@ -135,3 +135,11 @@ share: true
 
 > Users think in batches, and long forms can feel overwhelming. By creating logical groups the user will make sense of the form much faster.
 
+### Why ask?
+
+Omit optional fields and think of other ways to collect data. Always ask yourself if the question can be inferred, postponed, or completely excluded.
+Data entry is increasingly automated. For example, mobile and wearable devices collect large amounts of data without the user’s conscious awareness. Think of ways you can leverage social, conversational UI, SMS, email, voice, OCR, location, fingerprint, biometric, etc.
+
+### Make it fun
+
+Life is short. No one wants to fill out a form. Be conversational. Be funny. Gradually engage. Do the unexpected. It is the role of the designer to express their company’s brand to elicit an emotional reaction. If done correctly, it will increase completion rates. Just make sure you don’t violate the rules listed above.
