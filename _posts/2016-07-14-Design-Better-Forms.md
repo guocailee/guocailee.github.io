@@ -56,15 +56,15 @@ share: true
 
 ---
 
-### Resist using placeholder text as labels
+### 别用占位符替代标签
 
 ![](/images/post/better-forms/7.jpeg)
 
-> It is tempting to optimize space by using placeholder text as labels. This causes many usability issues that have been summarized by Katie Sherwin of Nielsen Norman Group.
+> 如果用占位符替代标签，并以此优化空间占用。  这里有一些由Katie Sherwin归纳的，可能引发的[问题](https://www.nngroup.com/articles/form-design-placeholders/) 
 
 ---
 
-### Place checkboxes (and radios) underneath each other for scannability
+### 把***复选框/单选框***竖排放置，以便可以对比各个选项的不同。
 
 ![](/images/post/better-forms/8.jpeg)
 
