@@ -9,6 +9,5 @@ share: true
 ---
 
 
-[TOC]
 
 # 
