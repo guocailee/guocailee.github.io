@@ -7,7 +7,7 @@ tags: [ci]
 comments: true
 share: true
 ---
-原文:[Use Cases for Fixed Backgrounds in CSS](https://css-tricks.com/use-cases-fixed-backgrounds-css/)
+> 原文:[Use Cases for Fixed Backgrounds in CSS](https://css-tricks.com/use-cases-fixed-backgrounds-css/)
 
 ***background-attachment*** 这个属性，对于我，感觉是完全没有用过的，它一直出现在学校的旧有设计中——当页面滚动时，背景是重复的，并且保持不动。
 
