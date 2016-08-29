@@ -2,8 +2,8 @@
 layout: post
 title: "固定背景的使用场景"
 description: "Use Cases for Fixed Backgrounds in CSS"
-category: FE 
-tags: [ci]
+category: FE
+tags: [css]
 comments: true
 share: true
 ---
@@ -19,7 +19,7 @@ share: true
 
 ## 制作幻灯片
 
-Making a presentation? A single page broken up into "slides" is pretty straightforward:
+你是否需要作演讲? 如果只是一个简单的页面的话，那么只需要把它分成几片就好了。如下所示：
 
 ```css
 .slide {
@@ -30,11 +30,11 @@ Making a presentation? A single page broken up into "slides" is pretty straightf
 }
 ```
 
-When we call the .slide element three times in our HTML, then we have slides that appear to overlap one another as the page scrolls down.
+然后我们只是需要在HTML页面重复这个***.slide***元素就行了， 层叠滚动的幻灯片就出来了。
 
 <p data-height="400" data-theme-id="0" data-slug-hash="NAEXyg" data-default-tab="result" data-user="geoffgraham" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/geoffgraham/pen/NAEXyg/">Scrolling Backgrounds in CSS - 01</a> by Geoff Graham (<a href="http://codepen.io/geoffgraham">@geoffgraham</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
-No libraries. No scroll-jacking. Pure CSS with full browser support. Might be a fun thing to pair with [CSS Scroll Snap Points](https://css-tricks.com/introducing-css-scroll-snap-points/).
+不需要第三方依赖， 不需要 scrolll jacking，纯CSS，全浏览器支持。有趣的是，跟[CSS Scroll Snap Points](https://css-tricks.com/introducing-css-scroll-snap-points/)是很像的。
 
 ## The "Slide Over The Header" Header
 

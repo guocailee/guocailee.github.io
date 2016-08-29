@@ -314,7 +314,13 @@ body,
     margin-right: auto;
 }
 
-.post-template .notepad-post-content > div:not(.notepad-post-title) p,div {
+.post-template .notepad-post-content > div:not(.notepad-post-title) p {
+    margin: 0 auto 0.9em auto;
+    max-width: 56.25rem;
+    font-size: 1.125rem;
+}
+
+article.notepad-post-content > div:not(.notepad-post-title) div {
     margin: 0 auto 0.9em auto;
     max-width: 56.25rem;
     font-size: 1.125rem;
