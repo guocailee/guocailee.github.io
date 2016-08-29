@@ -71,6 +71,6 @@ There are so many other great examples of this in action over on CodePen. Here's
 
 This one doesn't actually use background-attachment, but it's very cool and a related effect.
 
-<p data-height="600" data-theme-id="0" data-slug-hash="WxoVBo" data-default-tab="css,result" data-user="StephenScaff" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/StephenScaff/pen/WxoVBo/">Gettin' Clippy</a> by Stephen Scaff (<a href="http://codepen.io/StephenScaff">@StephenScaff</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="600" data-theme-id="0" data-slug-hash="WxoVBo" data-default-tab="result" data-user="StephenScaff" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/StephenScaff/pen/WxoVBo/">Gettin' Clippy</a> by Stephen Scaff (<a href="http://codepen.io/StephenScaff">@StephenScaff</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
