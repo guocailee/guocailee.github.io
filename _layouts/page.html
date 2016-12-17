@@ -7,7 +7,7 @@
   <main id="notepad-page-container" class="notepad-page-container" role="main">
     <header class="notepad-page-header">
       <div class="notepad-page-menu-header">
-        <a class="notepad-blog-logo" href="">
+        <a class="notepad-blog-logo" href="/">
           <img src="/images/{{ site.logo }}" alt="Blog Logo">
         </a>
         <div class="notepad-blog-menu">
@@ -36,6 +36,8 @@
     <article class="notepad-page-content">
       <div>{{ content }}</div>
     </article>
+    <div class="cf"></div>
+    {% include signoff.html %}
     <div class="cf"></div>
     {% include footer.html %}
   </main>
