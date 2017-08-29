@@ -127,7 +127,7 @@ In the following cases it's not possible to detect usage:
 
 > 示例
 
-``` js
+```js
 // webpack.config.babel.js
 exports default function(options) {
   return {

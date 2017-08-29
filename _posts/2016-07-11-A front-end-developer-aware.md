@@ -33,7 +33,7 @@ share: true
 
 前端开发应该关注运维开发. They are writing and committing code along with every other coder on the project, so they need to adhere to the same setup as everyone else. If they didn't write the build system themselves, they know what it is, what it does, and what it is capable of. If they didn't set up deployment themselves, they know how to use it.
 
-前端开发应该关注服务器. Without them, there is no website.
+前端开发应该关注服务器. 服务器是一个网站的根本。
 
 前端开发应该关注可访问性. If they aren't well versed in building for accessibility themselves, they know that it's important. They know how to test for it. They know who to talk to about it. They know there is quick wins and long term struggles regarding it.
 
