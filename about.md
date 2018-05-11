@@ -23,9 +23,9 @@ Hi， 我是阿宅， 这里是我的个人博客， 欢迎你的到来。
 到目前为止，以下为本站的简单统计：
 
 
-* 博文数： {{ site.posts | size }}篇 
-* 分类数： {{ site.categories | size }}个
-* 总字数： {{ total_words }}个
-{% if featuredcount != 0 %}* 推荐博文数： <a href="/featured">{{ featuredcount }} 篇</a>{% endif %}
+* 博文数： <a href="/featured">{{ site.posts | size }}</a> 篇 
+* 分类数： <a href="/categories">{{ site.categories | size }}</a> 个
+{% if featuredcount != 0 %}* 推荐博文数： <a href="/featured">{{ featuredcount }} </a>{% endif %}篇
+* 总字数： {{ total_words }} 个
 
 

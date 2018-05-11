@@ -47,7 +47,7 @@ links:
 timezone:    Asia/Shanghai
 future:      true
 highlighter: rouge
-paginate:    5
+paginate:    7
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
