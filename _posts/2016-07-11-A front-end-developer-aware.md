@@ -8,7 +8,7 @@ comments: true
 share: true
 ---
 
-原文：[front end developer aware](https://css-tricks.com/front-end-developer-aware/)
+> 原文：[front end developer aware](https://css-tricks.com/front-end-developer-aware/)
 
 最近我经常在思考一个问题(灵感来源一个[讨论](http://shoptalkshow.com/episodes/193-the-state-of-front-end-dev-ala-rebroadcast/)) ：做一个前端开发者，应该关心什么？ 在通常的感觉中，前端开发处于一个中间的位置 。每个一个团队的人，都需要跟前端开发打交道. 因为，前端开发是创造真正跟用户交互的职位，很多都需要前端开发进行处理。这也许是为何前端开发如此有趣的原因。
 

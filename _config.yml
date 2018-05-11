@@ -47,7 +47,6 @@ links:
 timezone:    Asia/Shanghai
 future:      true
 highlighter: rouge
-pplugins_dir: [jekyll-paginate]
 paginate:    5
 paginate_path: "page:num"
 
@@ -141,5 +140,6 @@ prose:
 
 
 include: [".htaccess"]
-plugins: [jekyll-paginate]
+plugins: 
+ - jekyll-paginate
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
