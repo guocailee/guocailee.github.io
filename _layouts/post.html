@@ -68,8 +68,11 @@
     </header>
     {% endif %} {% if page.imagefeature %}
     <article class="notepad-post-content post">{% else %}
-      <article class="notepad-post-content post tag-simple">{% endif %}
-        <div>{{ content }}
+      {% if page.toc %}
+      <div class="toc">{{ content|toc_only }}</div>
+      {% endif %}
+      <article class="notepad-post-content post tag-simple post-toc">{% endif %}
+        <div>{{ content|inject_anchors }}
         </div>
       </article>
       <div class="cf"></div>

@@ -342,7 +342,6 @@ article.notepad-post-content>div:not(.notepad-post-title) div {
   text-align: center;
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
-  max-width: 75rem;
 }
 
 .post-template .notepad-post-content.tag-simple>div:not(.notepad-post-title) {
