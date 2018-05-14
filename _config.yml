@@ -51,7 +51,7 @@ paginate:    7
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   /:categories/:title:output_ext
 markdown: kramdown
 kramdown: 
   input: GFM
