@@ -137,8 +137,6 @@ prose:
           element: "checkbox"
           label: "Comments"
           value: false
-
-
 include: [".htaccess"]
 plugins: 
  - jekyll-paginate

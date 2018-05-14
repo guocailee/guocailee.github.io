@@ -2,7 +2,7 @@
 layout: post
 title: "前端开发应该关注什么"
 description: "前端开发应该关注什么"
-category: FE
+category: Front-End
 tags: [thinking]
 comments: true
 share: true

@@ -2,7 +2,7 @@
 layout: post
 title: "六条有用的ES6技巧"
 description: "六条有用的ES6技巧"
-category: FE
+category: Front-End
 tags: [javascript]
 comments: true
 share: true
