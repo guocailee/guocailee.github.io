@@ -2,7 +2,7 @@
 layout: post
 title: "常用CSS片段"
 description: "常用CSS片段"
-category: FE 
+category: Front-End
 tags: [css]
 comments: true
 share: true

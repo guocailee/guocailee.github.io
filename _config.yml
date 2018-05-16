@@ -47,12 +47,11 @@ links:
 timezone:    Asia/Shanghai
 future:      true
 highlighter: rouge
-pplugins_dir: [jekyll-paginate]
-paginate:    5
+paginate:    7
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   /:categories/:title:output_ext
 markdown: kramdown
 kramdown: 
   input: GFM
@@ -138,8 +137,10 @@ prose:
           element: "checkbox"
           label: "Comments"
           value: false
-
-
 include: [".htaccess"]
-plugins: [jekyll-paginate]
+
+plugins: 
+ - jekyll-paginate
+ - jekyll-toc
+
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

@@ -2,7 +2,7 @@
 layout: post
 title: "伪类:target的使用技巧"
 description: "The :target Trick"
-category: FE
+category: Front-End
 tags: [css]
 comments: true
 share: true

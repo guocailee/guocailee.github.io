@@ -3,7 +3,7 @@ layout: post
 title: "设计更好的表单"
 description: "设计更好的表单"
 category: UI
-tags: [Form Deisign]
+tags: [deisign]
 comments: true
 share: true
 ---
@@ -68,78 +68,86 @@ share: true
 
 ![](/images/post/better-forms/8.jpeg)
 
-> Placing checkboxes underneath each other allows easy scanning.
+> 将复选框竖排放置， 方便用户浏览查看
 
 
 ---
 
-### Make CTAs(Call to action) descriptive
+### 使 CTAs(Call to action) 更清晰
 
 ![](/images/post/better-forms/9.jpeg)
 
-> A call to action should state the intent.
+> 一个可点击的按钮， 需要使用户知道点击用途的。
 
 ---
 
-### Specify errors inline
+### 错误提示应该与表单元素同一列
 
 ![](/images/post/better-forms/10.jpeg)
 
-> Show the user where the error occurred and provide a reason.
+> 提示用户哪里出错， 并给出详细的理由。
 
 ---
 
-### Use inline validation after the user fills out the field (unless it helps them while in the process)
+### 使用行内校验时，应该在用户输入完毕后才触发。 
 
 ![](/images/post/better-forms/11.jpeg)
 
-> Don’t use inline validation while the user is typing —unless it helps them— like in the case of creating a password, username, or message with a character count.
+> 别在用户在输入的时候，触发行内校验， — 除非这样有利于用户的输入，比如特殊格式要求的密码，用户名等等。
 
 ---
 
-### Don’t hide basic helper text
+### 别隐藏帮助文本
 
 ![](/images/post/better-forms/12.jpeg)
 
-> IExpose basic helper text wherever possible. For complex helper text, consider placing it next to the input during its focused state.
+> 可能展示基本帮助文本。对于复杂的辅助文本，请考虑将其放在焦点状态的输入旁边。
 
 ---
 
-### Differentiate primary from secondary actions
+### 区分主要和次要按钮
 
 ![](/images/post/better-forms/13.jpeg)
 
-> There is a bigger philosophical debate regarding whether a secondary option should even be included.
+> 关于是否应该包括次要选项还有更大的哲学争论。
 
 ---
 
-### Use field length as an affordance
+### 使用输入域的长度来限制用户可输入长度
 
 ![](/images/post/better-forms/14.jpeg)
 
-> The length of the field affords the length the answer. Employ this for fields that have a defined character count like phone numbers, zip codes, etc.
+> 输入域的长度与限制长度保持同样宽度。特别是对于特定的字段，如：　手机，　邮编等等。
 
 ---
 
-### Ditch the * and denote optional fields
+### 别再用(\*)，而是标示出 ***可选的***
 
 ![](/images/post/better-forms/15.jpeg)
 
-> Users don’t always know what is implied by the required field marker (*). Instead, it is better to denote optional fields.
+> 用户并不总是知道必须字段标记（*）的含义。相反，最好的方式是标示出可以选字段。
 
 ---
 
-### Group related information
+### 对相同的信息进行分组整合
 
 ![](/images/post/better-forms/16.jpeg)
 
-> Users think in batches, and long forms can feel overwhelming. By creating logical groups the user will make sense of the form much faster.
+> 用户总喜欢分段思考, 过长的表单列表会让用户感到压抑， 通过创建逻辑组， 用户可以更快地理解表单。
 
-### Why ask?
+### 为什么要求用户主动输入数据呢?
 
-Omit optional fields and think of other ways to collect data. Always ask yourself if the question can be inferred, postponed, or completely excluded.
-Data entry is increasingly automated. For example, mobile and wearable devices collect large amounts of data without the user’s conscious awareness. Think of ways you can leverage social, conversational UI, SMS, email, voice, OCR, location, fingerprint, biometric, etc.
+尽量减少必须让用户输入的表单数据， 在设计一个表单之前，先自己思考一下， 哪些字段是必须的， 哪些是可以完全省略的。 更好的方式是使用其他的手段收集数据。 例如，移动设备和可穿戴设备在没有用户意识的情况下收集大量数据。想想你可以利用社交，对话用户界面，短信，电子邮件，语音，OCR，位置，指纹，生物识别等方式。
 
 ### Make it fun
 
-Life is short. No one wants to fill out a form. Be conversational. Be funny. Gradually engage. Do the unexpected. It is the role of the designer to express their company’s brand to elicit an emotional reaction. If done correctly, it will increase completion rates. Just make sure you don’t violate the rules listed above.
+生命短暂。没有人喜欢填写表单。
+一个表单的设计原则应该如下所示：
+
+* 便于理解
+* 富有幽默
+* 渐进式的
+* 出乎意料的
+
+设计师的角色是表达他们公司的品牌，并引起用户的认同感。
+如果做得对，它会提高完成率。只要确保你没有违反上面列出的规则。

@@ -2,7 +2,7 @@
 layout: post
 title: "Webpack2 新特点"
 description: "Then new in webpack2"
-category: FE
+category: Front-End
 tags: [javascript]
 comments: true
 share: true

@@ -2,7 +2,7 @@
 layout: post
 title: "固定背景的使用场景"
 description: "Use Cases for Fixed Backgrounds in CSS"
-category: FE
+category: Front-End
 tags: [css]
 comments: true
 share: true
