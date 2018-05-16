@@ -290,6 +290,6 @@ And for good measure, here’s a few reasons to seek alternatives to these CSS-o
 * Support for touch devices - :hover can’t help you on a phone, so seek alternatives for accessing this content on a mobile device
 * JavaScript可以帮助你实现更丰富的功能
 
-每一个项目都有不同的需求,所以，你要确保你的解决办法可以完成你的项目目标。没有任何一个解决办法可以迎合所以的项目。但，令人兴奋的是，CSS可以完成一些特定的需求。
+每一个项目都有不同的需求,所以，你要确保你的解决办法可以完成你的项目目标。没有任何一个解决办法可以迎合所有的项目。但，令人兴奋的是，CSS可以完成一些特定的需求。
 
 译自: [you don't need javascript for that](https://robots.thoughtbot.com/you-don-t-need-javascript-for-that)
