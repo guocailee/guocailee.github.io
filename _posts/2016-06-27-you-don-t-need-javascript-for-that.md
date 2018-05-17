@@ -2,7 +2,7 @@
 layout: post
 title: "你没有必要用JS来做这些事"
 description: "你没有必要用JS来做这些事"
-category: FE
+category: Front-End
 tags: [javascript]
 comments: true
 share: true

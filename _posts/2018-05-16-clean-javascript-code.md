@@ -2,7 +2,7 @@
 layout: post
 title: "使 JavaScript 代码更简洁"
 description: "clean-code-javascript"
-category: FrontEnd
+category: Front-End
 tags: [JavaScript]
 comments: true
 share: true
