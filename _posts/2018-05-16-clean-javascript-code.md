@@ -10,51 +10,20 @@ share: true
 
 > 原文：[clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 
-# clean-code-javascript
+## 导读
+![Humorous image of software quality estimation as a count of how many expletives you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
 
-## Table of Contents
-  1. [Introduction](#introduction)
-  2. [Variables](#variables)
-  3. [Functions](#functions)
-  4. [Objects and Data Structures](#objects-and-data-structures)
-  5. [Classes](#classes)
-  6. [SOLID](#solid)
-  7. [Testing](#testing)
-  8. [Concurrency](#concurrency)
-  9. [Error Handling](#error-handling)
-  10. [Formatting](#formatting)
-  11. [Comments](#comments)
-  12. [Translation](#translation)
+软件工程原则, 来自Robert C. Martin的书 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), 对于Javascript来说， 并不是一个风格指南， 而是一个本构造 [可读性, 可复用性, 可重构性](https://github.com/ryanmcdermott/3rs-of-software-architecture) 软件工程指南.
 
-## Introduction
-![Humorous image of software quality estimation as a count of how many expletives
-you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
 
-Software engineering principles, from Robert C. Martin's book
-[*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882),
-adapted for JavaScript. This is not a style guide. It's a guide to producing
-[readable, reusable, and refactorable](https://github.com/ryanmcdermott/3rs-of-software-architecture) software in JavaScript.
+并非每个原则都必须严格遵守， 但是大部分的原则还是非常有用的。 这些仅仅是指导方针而已，但是以下是 *Clean Code* 的作者根据多年的经验编写而成的书。
 
-Not every principle herein has to be strictly followed, and even fewer will be
-universally agreed upon. These are guidelines and nothing more, but they are
-ones codified over many years of collective experience by the authors of
-*Clean Code*.
+从有软件工程到现在，也不过50年而已，很多东西需要我们去改进，并且学习。等软件架构体系足够成熟时， 也许我们会有更严格的规则。但是，现在这些规则还是值得你跟你的团队编写去遵守。
 
-Our craft of software engineering is just a bit over 50 years old, and we are
-still learning a lot. When software architecture is as old as architecture
-itself, maybe then we will have harder rules to follow. For now, let these
-guidelines serve as a touchstone by which to assess the quality of the
-JavaScript code that you and your team produce.
+> 还有一件事：知道这些不会立即使你成为一个更好的软件开发人员，和他们一起工作很多年并不意味着你就不会犯错。每一段代码都是从第一张草稿开始的，就像湿粘土形成最终的形状一样。最后，当我们与同事一起 *CodeReview* 时，就需要不断地改进代码， 更新代码。
 
-One more thing: knowing these won't immediately make you a better software
-developer, and working with them for many years doesn't mean you won't make
-mistakes. Every piece of code starts as a first draft, like wet clay getting
-shaped into its final form. Finally, we chisel away the imperfections when
-we review it with our peers. Don't beat yourself up for first drafts that need
-improvement. Beat up the code instead!
-
-## **Variables**
-### Use meaningful and pronounceable variable names
+## **变量**
+### 使用有意义的，可读的变量名
 
 **Bad:**
 ```javascript
