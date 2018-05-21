@@ -3,7 +3,7 @@ layout: post
 title: "web developers对互联网的期许进化史"
 description: "javascript 设计模式"
 category: Front-End 
-tags: [web,translate]
+tags: [web]
 comments: true
 share: true
 featured: true
