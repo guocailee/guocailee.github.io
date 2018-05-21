@@ -43,9 +43,9 @@ tags: [博客, 软件工程师]
     <nav class="pagination" role="navigation">
     {% if paginator.previous_page %}
 	    {% if paginator.previous_page == 1 %}
-	    <a class="newer-posts" href=""><i class="fa fa-chevron-left"></i> 前一页</a>
+	    <a class="newer-posts" href="/"><i class="fa fa-chevron-left"></i> 前一页</a>
 	    {% else %}
-	    <a class="newer-posts" href="/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> 前一页</a>
+	    <a class="newer-posts" href="/page/{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i> 前一页</a>
 	    {% endif %}
 	{% else %}
     <span class="newer-posts faded"><i class="fa fa-chevron-left"></i> 前一页</span>
@@ -54,7 +54,7 @@ tags: [博客, 软件工程师]
     
     <span class="page-number"> {{ paginator.page }} of {{ paginator.total_pages }}</span>
     	{% if paginator.next_page %} 
-        <a class="older-posts" href="/page{{ paginator.next_page }}/">后一页 <i class="fa fa-chevron-right"></i></a>
+        <a class="older-posts" href="/page/{{ paginator.next_page }}/">后一页 <i class="fa fa-chevron-right"></i></a>
     	{% else %}
     	<span class="older-posts faded">后一页 <i class="fa fa-chevron-right"></i></span>
     	{% endif %}
