@@ -64,14 +64,14 @@
                 <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
               </div>
             </div>
-          </div>
+          </div>>
     </header>
-    {% endif %} {% if page.imagefeature %}
-    <article class="notepad-post-content post">{% else %}
+    {% endif %}
+    <div class="row">
       {% if page.toc %}
       <div class="toc">{{ content|toc_only }}</div>
       {% endif %}
-      <article class="notepad-post-content post tag-simple post-toc">{% endif %}
+      <article class="notepad-post-content post tag-simple post-toc">
         <div>{{ content|inject_anchors }}
         </div>
       </article>
@@ -90,6 +90,7 @@
       </section>
       {% endif %}
       <div class="cf"></div>
+    </div>
       {% include footer.html %}
       </main>
       {% include scripts.html %}
