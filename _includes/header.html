@@ -22,7 +22,21 @@
   </div>
 </header>
 {% if page.layout == "home" %}
+<div class="notepad-site-head-content">
+  <div class="notepad-site-head-bg"></div>
+  <h1 class="notepad-blog-title">
+        <span class="notepad-site-head-title-bg">
+            {{ site.title }}
+        </span>
+    </h1>
+  <h2 class="notepad-blog-description">{{ site.description }}</h2>
+</div>
 {% elsif page.layout == "page" %}
+<div class="notepad-page-title row">
+  <div class="small-12 columns">
+    <h1>{{ page.title }}</h1>
+  </div>
+</div>
 {% else %}
 <div class="notepad-post-title-simple row">
   <div class="small-12 columns">
