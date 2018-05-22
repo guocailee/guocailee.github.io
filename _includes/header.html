@@ -22,14 +22,16 @@
   </div>
 </header>
 {% if page.layout == "home" %}
-<div class="notepad-site-head-content">
-  <div class="notepad-site-head-bg"></div>
-  <h1 class="notepad-blog-title">
-        <span class="notepad-site-head-title-bg">
-            {{ site.title }}
-        </span>
-    </h1>
-  <h2 class="notepad-blog-description">{{ site.description }}</h2>
+<div class="notepad-site-head">
+  <div class="notepad-site-head-content">
+    <div class="notepad-site-head-bg"></div>
+    <h1 class="notepad-blog-title">
+          <span class="notepad-site-head-title-bg">
+              {{ site.title }}
+          </span>
+      </h1>
+    <h2 class="notepad-blog-description">{{ site.description }}</h2>
+  </div>
 </div>
 {% elsif page.layout == "page" %}
 <div class="notepad-page-title row">
