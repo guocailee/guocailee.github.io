@@ -2036,8 +2036,9 @@ function hashIt(data) {
 ```
 
 
-### Don't leave commented out code in your codebase
-Version control exists for a reason. Leave old code in your history.
+### 不要再注释掉无用的代码
+
+版本控制， 可以方便你找回之前删除的代码。
 
 **Bad:**
 ```javascript
@@ -2053,9 +2054,10 @@ doStuff();
 ```
 
 
-### Don't have journal comments
-Remember, use version control! There's no need for dead code, commented code,
-and especially journal comments. Use `git log` to get history!
+### 请不要在注释记录代码变更
+
+请记住，使用版本控制！不需要无用的注释代码，特别是记录代码变更的注释， 请用 `git log`  查看代码变更。
+
 
 **Bad:**
 ```javascript
@@ -2078,9 +2080,9 @@ function combine(a, b) {
 ```
 
 
-### Avoid positional markers
-They usually just add noise. Let the functions and variable names along with the
-proper indentation and formatting give the visual structure to your code.
+### 避免位置标记
+
+这些位置标记， 只会增加阅读的难度， 良好的代码风格(适当的代码缩进和格式)更有利于阅读。
 
 **Bad:**
 ```javascript
@@ -2113,9 +2115,9 @@ const actions = function() {
 ```
 
 
-## Translation
+## 翻译
 
-This is also available in other languages:
+这里也有其他的语言版本: 
 
   - ![br](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Brazilian Portuguese**: [fesnt/clean-code-javascript](https://github.com/fesnt/clean-code-javascript)
   - ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Uruguay.png) **Spanish**: [andersontr15/clean-code-javascript](https://github.com/andersontr15/clean-code-javascript-es)
