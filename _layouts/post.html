@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   {% include head.html %} 
 </head>
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">
-    {% include header.html %} 
+   {% include header.html %} 
     <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
     <div class="row">
       {% if page.toc %}
@@ -15,22 +14,22 @@
         <div>{{ content|inject_anchors }}
         </div>
       </article>
-      <div class="cf"></div>
-      {% if site.share %}{% include share.html %}{% endif %}
-      <div class="cf"></div>
-      {% include signoff.html %}
-      <div class="cf"></div>
-      {% if site.disqus_shortname and page.comments == true %}
-      <section class="notepad-disqus row">
-        <div class="small-12 columns">
-          <h1 class="notepad-comments-header">Comments</h1>
-          <div class="ds-thread" data-thread-key="{{page.url}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
-          {% include disqus_comments.html %}
-        </div>
-      </section>
-      {% endif %}
-      <div class="cf"></div>
     </div>
+    <div class="cf"></div>
+    {% if site.share %}{% include share.html %}{% endif %}
+    <div class="cf"></div>
+    {% include signoff.html %}
+    <div class="cf"></div>
+    {% if site.disqus_shortname and page.comments == true %}
+    <section class="notepad-disqus row">
+      <div class="small-12 columns">
+        <h1 class="notepad-comments-header">Comments</h1>
+        <div class="ds-thread" data-thread-key="{{page.url}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
+        {% include disqus_comments.html %}
+      </div>
+    </section>
+    {% endif %}
+    <div class="cf"></div>
     {% include footer.html %}
   </main>
   {% include scripts.html %}
