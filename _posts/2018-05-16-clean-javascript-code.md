@@ -2,7 +2,7 @@
 layout: post
 title: "使 JavaScript 代码更简洁"
 description: "clean-code-javascript"
-category: Front-Endosg
+category: Front-End
 tags: [javaScript]
 toc: true
 comments: true
@@ -15,7 +15,6 @@ share: true
 ![Humorous image of software quality estimation as a count of how many expletives you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
 
 软件工程原则, 来自Robert C. Martin的书 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), 对于Javascript来说， 并不是一个风格指南， 而是一个本构造 [可读性, 可复用性, 可重构性](https://github.com/ryanmcdermott/3rs-of-software-architecture) 软件工程指南.
-
 
 并非每个原则都必须严格遵守， 但是大部分的原则还是非常有用的。 这些仅仅是指导方针而已，但是以下是 *Clean Code* 的作者根据多年的经验编写而成的书。
 

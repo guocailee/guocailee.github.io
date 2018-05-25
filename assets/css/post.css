@@ -47,8 +47,15 @@ body,
 .post-template h5,
 .post-template h6 {
   padding-top: 2.785rem;
-  padding-bottom: 0.785rem;
 }
+
+.post-template h2+h3,
+.post-template h3+h4 ,
+.post-template h4+h5 ,
+.post-template h5+h6 {
+  padding-top: 0rem;
+}
+
 
 .post-template .notepad-blog-menu .notepad-mobile-menu a {
   color: white;
