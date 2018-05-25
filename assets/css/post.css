@@ -341,7 +341,7 @@ article.notepad-post-content>div:not(.notepad-post-title) div {
   }
 }
 
-.post-template .notepad-post-content>div:not(.notepad-post-title) p.with-image {
+.post-template p.with-image {
   text-align: center;
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;

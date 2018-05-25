@@ -5,6 +5,7 @@ description: "Use Cases for Fixed Backgrounds in CSS"
 category: Front-End
 tags: [css]
 comments: true
+featured: true
 share: true
 ---
 > 原文:[Use Cases for Fixed Backgrounds in CSS](https://css-tricks.com/use-cases-fixed-backgrounds-css/)

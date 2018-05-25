@@ -5,6 +5,7 @@ description: "六条有用的ES6技巧"
 category: Front-End
 tags: [javascript]
 comments: true
+featured: true
 share: true
 ---
 

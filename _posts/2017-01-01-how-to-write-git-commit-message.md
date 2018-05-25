@@ -6,6 +6,7 @@ category: git
 tags: [git]
 comments: true
 share: true
+featured: true
 ---
 
 > 原文：[https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/)

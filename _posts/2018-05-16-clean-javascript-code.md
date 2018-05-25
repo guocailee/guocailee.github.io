@@ -7,6 +7,7 @@ tags: [javaScript]
 toc: true
 comments: true
 share: true
+featured: true
 ---
 
 > 原文：[clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)

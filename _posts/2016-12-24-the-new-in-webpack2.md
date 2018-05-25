@@ -5,6 +5,7 @@ description: "Then new in webpack2"
 category: Front-End
 tags: [javascript]
 comments: true
+featured: true
 share: true
 ---
 > 原文[What's new in webpack 2](https://gist.github.com/sokra/27b24881210b56bbaff7), 本文主要说明Webpack2 的新功能。

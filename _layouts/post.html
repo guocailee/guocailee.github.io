@@ -7,7 +7,7 @@
    {% include header.html %} 
     <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
     <div class="row">
-      {% if page.toc %}
+      {% if site.toc %}
       <div class="toc">{{ content|toc_only }}</div>
       {% endif %}
       <article>

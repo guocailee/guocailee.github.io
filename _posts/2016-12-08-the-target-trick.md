@@ -5,6 +5,7 @@ description: "The :target Trick"
 category: Front-End
 tags: [css]
 comments: true
+featured: true
 share: true
 ---
 

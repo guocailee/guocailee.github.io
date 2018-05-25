@@ -5,6 +5,7 @@ description: "你没有必要用JS来做这些事"
 category: Front-End
 tags: [javascript]
 comments: true
+featured: true
 share: true
 ---
 
