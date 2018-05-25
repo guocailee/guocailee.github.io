@@ -4,6 +4,7 @@ title: "使 JavaScript 代码更简洁"
 description: "clean-code-javascript"
 category: Front-End
 tags: [javaScript]
+toc: true
 comments: true
 share: true
 ---
