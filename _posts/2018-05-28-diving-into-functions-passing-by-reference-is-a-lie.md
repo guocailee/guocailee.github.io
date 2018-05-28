@@ -10,9 +10,9 @@ share: true
 featured: true
 ---
 
-[原文](https://wanago.io/2018/05/28/diving-into-functions-passing-by-reference-is-a-lie/)
+>[原文](https://wanago.io/2018/05/28/diving-into-functions-passing-by-reference-is-a-lie/)
 
-Functions 是JavaScript中最基本的特性之一， 如果您好奇它是如何工作的，请在本文中与我一起探讨！
+>Functions 是JavaScript中最基本的特性之一， 如果您好奇它是如何工作的，请在本文中与我一起探讨！
 
 ## 函数的基础
 
