@@ -73,7 +73,9 @@ body,
     border-bottom: 0.1875rem solid white;
   }
 }
-
+.notepad-post-container-simple {
+  padding: 0 15px;
+}
 .post-template .notepad-post-header {
   position: relative;
   margin: 0 auto;
