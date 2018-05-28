@@ -6,15 +6,16 @@
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">
    {% include header.html %} 
     <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
-    <div class="row">
-      {% if site.toc == true %}
-      <div class="toc">{{ content|toc_only }}</div>
-      {% endif %}
-      <article>
-        <div>{{ content|inject_anchors }}
-        </div>
-      </article>
-    </div>
+      <div class="row">
+        {% if site.toc == true %}
+        <div class="toc">{{ content|toc_only }}</div>
+        {% endif %}
+        <article>
+          <div>{{ content|inject_anchors }}
+          </div>
+        </article>
+      </div>
+    </main>
     <div class="cf"></div>
     {% if site.share %}{% include share.html %}{% endif %}
     <div class="cf"></div>
@@ -30,7 +31,6 @@
     </section>
     {% endif %}
     <div class="cf"></div>
-  </main>
   {% include footer.html %}
   {% include scripts.html %}
 </body>
