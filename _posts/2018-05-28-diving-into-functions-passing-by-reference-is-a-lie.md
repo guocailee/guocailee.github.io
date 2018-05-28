@@ -16,7 +16,7 @@ featured: true
 
 ## 函数的基础
 
-实际上，一个函数是一个子程序，可以在代码的另一个地方调用。它有一个函数体，它是一系列语句。它可以将值作为参数传递给它。该函数也可以返回一个值。在JavaScript中，它们是从 ***Function.prototype*** 继承的对象。如果您想了解更多关于原型的信息，请查看我之前的一篇文章：[原型:ES6课程背后的大兄弟](https://wanago.io/2018/03/19/prototype-the-big-bro-behind-es6-class/)。看看这段代码：
+实际上，一个函数是一个子程序，可以在代码的另一个地方调用。它有一个函数体，它是一系列语句。它可以将值作为参数传递给它。该函数也可以返回一个值。在 JavaScript 中，它们是从 ***Function.prototype*** 继承的对象。如果您想了解更多关于原型的信息，请查看我之前的一篇文章：[原型:ES6类背后的大兄弟](https://wanago.io/2018/03/19/prototype-the-big-bro-behind-es6-class/)。看看这段代码：
 
 ```javascript
 function fn() {};
