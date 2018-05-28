@@ -806,7 +806,6 @@ article.notepad-post-content>div:not(.notepad-post-title) div {
 
 .post-template .row p,
 .page-template .row p {
-  max-width: 56.25rem !important;
   font-size: 1.125rem !important;
 }
 
