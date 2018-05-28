@@ -3,7 +3,7 @@ layout: post
 title: "使 JavaScript 代码更简洁"
 description: "clean-code-javascript"
 category: Front-End
-tags: [javaScript]
+tags: [javascript]
 toc: true
 comments: true
 share: true
