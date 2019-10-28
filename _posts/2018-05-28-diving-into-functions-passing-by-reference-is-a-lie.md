@@ -3,7 +3,7 @@ layout: post
 title: "深入了解Functions: 通过引用传参是一个谎言"
 description: "diving into functions: passing by reference is a lie"
 category: Front-End
-tags: [javascript, diving into functions]
+tags: [javascript]
 toc: true
 comments: true
 share: true
