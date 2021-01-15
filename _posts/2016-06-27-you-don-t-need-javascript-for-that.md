@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "你没有必要用JS来做这些事"
-description: "你没有必要用JS来做这些事"
+title: '你没有必要用JS来做这些事'
+description: '你没有必要用JS来做这些事'
 category: Front-End
 tags: [javascript]
 comments: true
@@ -20,17 +20,12 @@ We can use pseudo-elements to pull in text and display it on :hover. (You could 
 HTML:
 
 ```html
-
-<a href="#" class="tooltip-toggle" aria-label="Sample text for your tooltip!" tabindex="0">
-  Label for your tooltip
-</a>
-
+<a href="#" class="tooltip-toggle" aria-label="Sample text for your tooltip!" tabindex="0"> Label for your tooltip </a>
 ```
 
 SCSS:
 
 ```scss
-
 .tooltip-toggle {
   cursor: pointer;
   position: relative;
@@ -59,7 +54,7 @@ SCSS:
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #000;
-    content: " ";
+    content: ' ';
     font-size: 0;
     left: 9px; //This centers the arrow above the element with the tooltip
     line-height: 0;
@@ -85,7 +80,6 @@ SCSS:
     transition: all 0.75s ease;
   }
 }
-
 ```
 
 ## Dropdown menu
@@ -95,7 +89,6 @@ If you need to implement a simple dropdown menu, you can use CSS to easily trigg
 HTML:
 
 ```html
-
 <div class="nav-container">
   <ul class="nav-items">
     <!-- Navigation -->
@@ -120,13 +113,11 @@ HTML:
     </li>
   </ul>
 </div>
-
 ```
 
 SCSS:
 
 ```scss
-
 //Nav bar styling
 .nav-container {
   background-color: #fff;
@@ -168,8 +159,8 @@ li {
   }
 
   &::after {
-    color: #ED3E44;
-    content: "›";
+    color: #ed3e44;
+    content: '›';
     font-size: 24px;
     font-weight: bold;
     position: absolute;
@@ -201,7 +192,6 @@ li {
     background-color: #ccc;
   }
 }
-
 ```
 
 ## Toggle Visibility
@@ -211,24 +201,19 @@ The most common reason I turn to JavaScript is to toggle the visibility of an el
 HTML:
 
 ```html
-
 <div class="toggle">
   <!-- Checkbox toggle -->
-  <input type="checkbox" value="selected" id="beethoven-joke" class="toggle-input">
-  <label for="beethoven-joke" class="toggle-label">What was Beethoven's favorite fruit?</label> 
+  <input type="checkbox" value="selected" id="beethoven-joke" class="toggle-input" />
+  <label for="beethoven-joke" class="toggle-label">What was Beethoven's favorite fruit?</label>
 
   <!-- Content to toggle -->
-  <div role="toggle" class="toggle-content">
-    BA-NA-NA-NA!
- </div>
+  <div role="toggle" class="toggle-content">BA-NA-NA-NA!</div>
 </div>
-
 ```
 
 SCSS:
 
 ```scss
-
 .toggle {
   margin: 0 auto;
   max-width: 400px;
@@ -244,7 +229,7 @@ SCSS:
   padding: 1em;
 
   &:after {
-    content: "+";
+    content: '+';
     float: right;
   }
 }
@@ -270,27 +255,26 @@ SCSS:
 
   ~ .toggle-label {
     &:after {
-      content: "-"; //Change label's '+' to '-' when checked
+      content: '-'; //Change label's '+' to '-' when checked
     }
   }
 }
-
 ```
 
 ## In the end…
 
 To recap, here’s a few reasons why using CSS over JavaScript can be beneficial to your project:
 
-* Lightweight, no need to install a plugin or add another .js file
-* Clarity around what’s happening with styles and transitions
-* Keep things simple and get things built quickly
+- Lightweight, no need to install a plugin or add another .js file
+- Clarity around what’s happening with styles and transitions
+- Keep things simple and get things built quickly
 
 And for good measure, here’s a few reasons to seek alternatives to these CSS-only methods:
 
-* Accessibility concerns - a lot of these components need some JavaScript love to be more accessibility friendly. For more information about web accessibility, check out the WCAG Guidelines
-* Support for touch devices - :hover can’t help you on a phone, so seek alternatives for accessing this content on a mobile device
-* JavaScript可以帮助你实现更丰富的功能
+- Accessibility concerns - a lot of these components need some JavaScript love to be more accessibility friendly. For more information about web accessibility, check out the WCAG Guidelines
+- Support for touch devices - :hover can’t help you on a phone, so seek alternatives for accessing this content on a mobile device
+- JavaScript 可以帮助你实现更丰富的功能
 
-每一个项目都有不同的需求,所以，你要确保你的解决办法可以完成你的项目目标。没有任何一个解决办法可以迎合所有的项目。但，令人兴奋的是，CSS可以完成一些特定的需求。
+每一个项目都有不同的需求,所以，你要确保你的解决办法可以完成你的项目目标。没有任何一个解决办法可以迎合所有的项目。但，令人兴奋的是，CSS 可以完成一些特定的需求。
 
 译自: [you don't need javascript for that](https://robots.thoughtbot.com/you-don-t-need-javascript-for-that)

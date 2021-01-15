@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "前端开发应该关注什么"
-description: "前端开发应该关注什么"
+title: '前端开发应该关注什么'
+description: '前端开发应该关注什么'
 category: Front-End
 tags: [thinking]
 comments: true
@@ -14,7 +14,6 @@ share: true
 最近我经常在思考一个问题(灵感来源一个[讨论](http://shoptalkshow.com/episodes/193-the-state-of-front-end-dev-ala-rebroadcast/)) ：做一个前端开发者，应该关心什么？ 在通常的感觉中，前端开发处于一个中间的位置 。每个一个团队的人，都需要跟前端开发打交道. 因为，前端开发是创造真正跟用户交互的职位，很多都需要前端开发进行处理。这也许是为何前端开发如此有趣的原因。
 
 因为前端开发处于中间位置，并且需要跟许多人与工作打交道。如果前端关注以下技能，那么在开发时，就更能胜任工作，并将工作任务处理得更好.
-
 
 前端开发应该关注设计， 如果他本身不是设计师，那么他不会知道设计的重要性. They have good taste in design. They know about the tools involved. They know where the design role fits into the process.
 

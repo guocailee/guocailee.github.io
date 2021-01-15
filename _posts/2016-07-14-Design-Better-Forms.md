@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "设计更好的表单"
-description: "设计更好的表单"
+title: '设计更好的表单'
+description: '设计更好的表单'
 category: UI
 tags: [deisign]
 comments: true
@@ -9,7 +9,7 @@ featured: true
 share: true
 ---
 
->原文:[Design Better Forms](https://uxdesign.cc/design-better-forms-96fadca0f49c#.uuo2uz30e)
+> 原文:[Design Better Forms](https://uxdesign.cc/design-better-forms-96fadca0f49c#.uuo2uz30e)
 
 此文展示一些通常的表设计错误并给出一些解决办法。
 
@@ -49,7 +49,7 @@ share: true
 
 ---
 
-### 如果选择个数少于6,那么应该全部显示出来
+### 如果选择个数少于 6,那么应该全部显示出来
 
 ![](/images/post/better-forms/6.jpeg)
 
@@ -61,16 +61,15 @@ share: true
 
 ![](/images/post/better-forms/7.jpeg)
 
-> 如果用占位符替代标签，并以此优化空间占用。  这里有一些由Katie Sherwin归纳的，可能引发的[问题](https://www.nngroup.com/articles/form-design-placeholders/) 
+> 如果用占位符替代标签，并以此优化空间占用。 这里有一些由 Katie Sherwin 归纳的，可能引发的[问题](https://www.nngroup.com/articles/form-design-placeholders/)
 
 ---
 
-### 把***复选框/单选框***竖排放置，以便可以对比各个选项的不同。
+### 把**_复选框/单选框_**竖排放置，以便可以对比各个选项的不同。
 
 ![](/images/post/better-forms/8.jpeg)
 
 > 将复选框竖排放置， 方便用户浏览查看
-
 
 ---
 
@@ -90,7 +89,7 @@ share: true
 
 ---
 
-### 使用行内校验时，应该在用户输入完毕后才触发。 
+### 使用行内校验时，应该在用户输入完毕后才触发。
 
 ![](/images/post/better-forms/11.jpeg)
 
@@ -122,11 +121,11 @@ share: true
 
 ---
 
-### 别再用(\*)，而是标示出 ***可选的***
+### 别再用(\*)，而是标示出 **_可选的_**
 
 ![](/images/post/better-forms/15.jpeg)
 
-> 用户并不总是知道必须字段标记（*）的含义。相反，最好的方式是标示出可以选字段。
+> 用户并不总是知道必须字段标记（\*）的含义。相反，最好的方式是标示出可以选字段。
 
 ---
 
@@ -145,10 +144,10 @@ share: true
 生命短暂。没有人喜欢填写表单。
 一个表单的设计原则应该如下所示：
 
-* 便于理解
-* 富有幽默
-* 渐进式的
-* 出乎意料的
+- 便于理解
+- 富有幽默
+- 渐进式的
+- 出乎意料的
 
 设计师的角色是表达他们公司的品牌，并引起用户的认同感。
 如果做得对，它会提高完成率。只要确保你没有违反上面列出的规则。
